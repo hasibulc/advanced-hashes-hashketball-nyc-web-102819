@@ -206,7 +206,7 @@ def player_with_longest_name
     'Kemba Walker' => { number: 33, shoe: 15, points: 6, rebounds: 12, assists: 12, steals: 7, blocks: 5, slam_dunks: 12},
   }
   
-  longest_name = names.max_by {|n| n.length}
+  longest_name = player_stats.max_by {|n| n.length}
   
   return longest_name
 end
