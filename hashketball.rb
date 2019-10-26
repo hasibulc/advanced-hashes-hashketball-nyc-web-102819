@@ -188,7 +188,7 @@ def most_points_scored
   }
   sorted_spoints = points.sort_by {|name, points| points}
   most_points = sorted_spoints[-1][0]
-  puts most_points
+  return most_points
 end
 
 
