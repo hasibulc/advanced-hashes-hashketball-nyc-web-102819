@@ -166,7 +166,27 @@ end
   player_big_shoe = sorted_shoe_size[-1][0]
   num_rebound = rebounds[player_big_shoe]
   
-  
-
   return num_rebound
+end
+
+
+
+#Bonus
+
+def most_points_scored
+  points = {
+    'Alan Anderson' => 22,
+    'Reggie Evans' => 12,
+    'Brook Lopez' => 17,   
+    'Mason Plumlee' => 26,   
+    'Jason Terry' => 19,
+    'Jeff Adrien' => 10,
+    'Bismack Biyombo' => 12,  
+    'DeSagna Diop' => 24,  
+    'Ben Gordon' => 33,  
+    'Kemba Walker' => 6,
+  }
+  sorted_spoints = shoe_size.sort_by {|name, points| points}
+  most_points = sorted_spoints[-1][0]
+  return most_points
 end
