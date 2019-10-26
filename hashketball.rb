@@ -186,7 +186,7 @@ def most_points_scored
     'Ben Gordon' => 33,  
     'Kemba Walker' => 6,
   }
-  sorted_spoints = shoe_size.sort_by {|name, points| points}
+  sorted_spoints = points.sort_by {|name, points| points}
   most_points = sorted_spoints[-1][0]
   return most_points
 end
