@@ -188,6 +188,18 @@ def most_points_scored
   }
   sorted_spoints = points.sort_by {|name, points| points}
   most_points = sorted_spoints[-1][0]
-  return most_points
+  puts most_points
 end
+
+
+def player_with_the_longest_name
+  names = ['Alan Anderson', 'Reggie Evans', 'Brook Lopez', 'Mason Plumlee', 
+           'Jason Terry', 'Jeff Adrien', 'Bismack Biyombo', 
+           'DeSagna Diop', 'BenG ordon', 'Kemba Walker',]
+  
+  longest_name = names.max_by {|n| n.length}
+  
+  return longest_name
+end
+
 
