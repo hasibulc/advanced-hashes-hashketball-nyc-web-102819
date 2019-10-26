@@ -192,7 +192,7 @@ def most_points_scored
 end
 
 
-def player_with_the_longest_name
+def player_with_longest_name
   names = ['Alan Anderson', 'Reggie Evans', 'Brook Lopez', 'Mason Plumlee', 
            'Jason Terry', 'Jeff Adrien', 'Bismack Biyombo', 
            'DeSagna Diop', 'BenG ordon', 'Kemba Walker',]
