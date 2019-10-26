@@ -260,12 +260,10 @@ def long_name_steals_a_ton
   count = 0
 
   while count < player_stats.count do
-    player_steals << player_stats[count][:steals]
+    player_steals << [player_stats[count][:player], player_stats[count][:steals]]
     count += 1
   end
   
-  return long_name == player_steals[-1][0]
+  return long_name == player_steals.sort_by {|name, points| points} [-1][0]
 
 end
-
-
